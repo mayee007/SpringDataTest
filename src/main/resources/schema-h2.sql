@@ -3,3 +3,9 @@ CREATE TABLE IF NOT EXISTS  fullname(
     firstName VARCHAR(50), 
     lastName VARCHAR(50)
 );
+
+CREATE TABLE IF NOT EXISTS  TECHNOLOGY(
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    technologyType VARCHAR(50), 
+    category VARCHAR(50)
+);

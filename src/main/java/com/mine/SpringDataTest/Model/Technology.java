@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Technology implements java.io.Serializable {
 	
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO) //this make the ID autoincrement
 	@Column(name = "id")
 	int technologyId;
 	
