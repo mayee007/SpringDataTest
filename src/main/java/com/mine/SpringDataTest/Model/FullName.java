@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "fullname")
+@Table(name = "FULLNAME")
 public class FullName {
 
 	@Id //this makes the id as primary key 
