@@ -1,0 +1,289 @@
+<class-diagram version="1.0.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="dao.UserDao" project="Info" 
+    file="/Info/src/dao/UserDao.java" binary="false">    
+    <position height="144" width="158" x="1166" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="model.Technology" project="Info" 
+    file="/Info/src/model/Technology.java" binary="false">    
+    <position height="263" width="173" x="1937" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="controllers.UserController" project="Info" 
+    file="/Info/src/controllers/UserController.java" binary="false">    
+    <position height="127" width="411" x="715" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="dao.ProblemDaoImpl" project="Info" 
+    file="/Info/src/dao/ProblemDaoImpl.java" binary="false">    
+    <position height="178" width="232" x="2275" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" name="model.Info" project="Info" file="/Info/src/model/Info.java" 
+    binary="false">    
+    <position height="433" width="189" x="1822" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="dao.UserDaoImpl" project="Info" 
+    file="/Info/src/dao/UserDaoImpl.java" binary="false">    
+    <position height="195" width="232" x="1166" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="dao.InfoDaoImpl" project="Info" 
+    file="/Info/src/dao/InfoDaoImpl.java" binary="false">    
+    <position height="195" width="232" x="4768" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" corner="BOTTOM_RIGHT" language="java" name="dao.TechnologyDaoImpl" project="Info" 
+    file="/Info/src/dao/TechnologyDaoImpl.java" binary="false">    
+    <position height="246" width="267" x="2961" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" corner="BOTTOM_RIGHT" language="java" name="controllers.ProblemController" project="Info" 
+    file="/Info/src/controllers/ProblemController.java" binary="false">    
+    <position height="195" width="374" x="2547" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="10" corner="BOTTOM_RIGHT" language="java" name="dao.ProblemDao" project="Info" 
+    file="/Info/src/dao/ProblemDao.java" binary="false">    
+    <position height="127" width="231" x="2547" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="11" corner="BOTTOM_RIGHT" language="java" name="controllers.TechnologyPageController" project="Info" 
+    file="/Info/src/controllers/TechnologyPageController.java" binary="false">    
+    <position height="178" width="375" x="3268" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" corner="BOTTOM_RIGHT" language="java" name="controllers.GeneratePDFController" project="Info" 
+    file="/Info/src/controllers/GeneratePDFController.java" binary="false">    
+    <position height="229" width="355" x="3683" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="13" corner="BOTTOM_RIGHT" language="java" name="model.ProblemAndSolution" project="Info" 
+    file="/Info/src/model/ProblemAndSolution.java" binary="false">    
+    <position height="467" width="184" x="2051" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="14" corner="BOTTOM_RIGHT" language="java" name="dao.TechnologyDao" project="Info" 
+    file="/Info/src/dao/TechnologyDao.java" binary="false">    
+    <position height="195" width="267" x="3485" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="15" corner="BOTTOM_RIGHT" language="java" name="controllers.DWRControllerUtil" project="Info" 
+    file="/Info/src/controllers/DWRControllerUtil.java" binary="false">    
+    <position height="144" width="255" x="4078" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="16" corner="BOTTOM_RIGHT" language="java" name="controllers.InfoController" project="Info" 
+    file="/Info/src/controllers/InfoController.java" binary="false">    
+    <position height="212" width="355" x="4373" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="17" corner="BOTTOM_RIGHT" language="java" name="controllers.MainPageController" project="Info" 
+    file="/Info/src/controllers/MainPageController.java" binary="false">    
+    <position height="110" width="411" x="65" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="18" corner="BOTTOM_RIGHT" language="java" name="model.User" project="Info" file="/Info/src/model/User.java" 
+    binary="false">    
+    <position height="297" width="159" x="516" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="19" corner="BOTTOM_RIGHT" language="java" name="controllers.AddUserController" project="Info" 
+    file="/Info/src/controllers/AddUserController.java" binary="false">    
+    <position height="127" width="344" x="1438" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="20" corner="BOTTOM_RIGHT" language="java" name="dao.InfoDao" project="Info" 
+    file="/Info/src/dao/InfoDao.java" binary="false">    
+    <position height="144" width="173" x="4373" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <association id="21">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="22" name="userDao"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="24">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <association id="25">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="26" name="techDao"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="29" name="technology"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="32" name="problemDao"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="35" name="technologyDao"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="37">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="38">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="39" name="techDao"/>      
+      <multiplicity id="40" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="41">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <association id="42">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="43" name="techDao"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="45">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="46" name="technologyDao"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="49" name="infoDao"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="52" name="technology"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="54">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="55" name="problemDao"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="58" name="userDao"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="61" name="infoDao"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="63">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="14"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,294 @@
+mahesh@agni /workspace/Info $ mvn dependency:tree 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.mine.web:Info-Web:war:1.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 34, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.mine.ejb:Info-Ejb:ejb:1.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 19, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Info application
+[INFO] Maven Info EJB module
+[INFO] Maven Info web module
+[INFO] ear assembly
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Info application 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:tree (default-cli) @ Info ---
+[INFO] com.mine:Info:pom:1.0
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- weblogic-server:weblogic:jar:12.1.1.0:system
+[INFO] +- javax.ejb:ejb-api:jar:3.0:compile
+[INFO] +- org.springframework:spring-core:jar:3.2.0.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] +- org.springframework:spring-web:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:3.2.0.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-webmvc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-beans:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-jdbc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-tx:jar:3.2.0.RELEASE:compile
+[INFO] +- com.caucho:hessian:jar:4.0.7:compile
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] +- org.directwebremoting:dwr:jar:3.0.M1:compile
+[INFO] |  \- org.mortbay.jetty:cometd:jar:6.1.4:compile
+[INFO] |     \- org.mortbay.jetty:jetty-util:jar:6.1.4:compile
+[INFO] +- org.springframework:spring-remoting:jar:2.0.8:compile
+[INFO] +- com.google.code.maven-play-plugin.org.hibernate:hibernate-core:jar:3.6.10.Final-patched-play-1.2.5:compile
+[INFO] |  +- antlr:antlr:jar:2.7.6:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.1:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final:compile
+[INFO] |  \- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] +- javax.transaction:transaction-api:jar:1.1-rev-1:compile
+[INFO] +- javax.transaction:jta:jar:1.1:compile
+[INFO] +- org.springframework:spring-orm:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:3.2.0.RELEASE:test
+[INFO] +- com.itextpdf:itextpdf:jar:5.3.4:compile
+[INFO] +- org.springframework.security:spring-security-config:jar:3.1.3.RELEASE:compile
+[INFO] |  \- org.springframework.security:spring-security-core:jar:3.1.3.RELEASE:compile
+[INFO] +- org.springframework.security:spring-security-web:jar:3.1.3.RELEASE:compile
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.2:compile
+[INFO] |  \- log4j:log4j:jar:1.2.17:compile
+[INFO] +- org.slf4j:slf4j-simple:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- javassist:javassist:jar:3.12.1.GA:compile
+[INFO] +- org.easymock:easymock:jar:3.1:test
+[INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
+[INFO] |  \- org.objenesis:objenesis:jar:1.2:test
+[INFO] +- org.apache.tiles:tiles-servlet:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-servlet:jar:1.0.1:compile
+[INFO] |     \- org.apache.tiles:tiles-request-api:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-jsp:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-jsp:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-template:jar:3.0.1:compile
+[INFO] |  +- org.apache.tiles:tiles-api:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-autotag-core-runtime:jar:1.1.0:compile
+[INFO] \- org.apache.tiles:tiles-core:jar:3.0.1:compile
+[INFO]    \- commons-digester:commons-digester:jar:2.0:compile
+[INFO]       \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Info EJB module 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:tree (default-cli) @ Info-Ejb ---
+[INFO] com.mine.ejb:Info-Ejb:ejb:1.0
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- weblogic-server:weblogic:jar:12.1.1.0:system
+[INFO] +- javax.ejb:ejb-api:jar:3.0:compile
+[INFO] +- org.springframework:spring-core:jar:3.2.0.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] +- org.springframework:spring-web:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:3.2.0.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-webmvc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-beans:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-jdbc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-tx:jar:3.2.0.RELEASE:compile
+[INFO] +- com.caucho:hessian:jar:4.0.7:compile
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] +- org.directwebremoting:dwr:jar:3.0.M1:compile
+[INFO] |  \- org.mortbay.jetty:cometd:jar:6.1.4:compile
+[INFO] |     \- org.mortbay.jetty:jetty-util:jar:6.1.4:compile
+[INFO] +- org.springframework:spring-remoting:jar:2.0.8:compile
+[INFO] +- com.google.code.maven-play-plugin.org.hibernate:hibernate-core:jar:3.6.10.Final-patched-play-1.2.5:compile
+[INFO] |  +- antlr:antlr:jar:2.7.6:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.1:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final:compile
+[INFO] |  \- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] +- javax.transaction:transaction-api:jar:1.1-rev-1:compile
+[INFO] +- javax.transaction:jta:jar:1.1:compile
+[INFO] +- org.springframework:spring-orm:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:3.2.0.RELEASE:test
+[INFO] +- com.itextpdf:itextpdf:jar:5.3.4:compile
+[INFO] +- org.springframework.security:spring-security-config:jar:3.1.3.RELEASE:compile
+[INFO] |  \- org.springframework.security:spring-security-core:jar:3.1.3.RELEASE:compile
+[INFO] +- org.springframework.security:spring-security-web:jar:3.1.3.RELEASE:compile
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.2:compile
+[INFO] |  \- log4j:log4j:jar:1.2.17:compile
+[INFO] +- org.slf4j:slf4j-simple:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- javassist:javassist:jar:3.12.1.GA:compile
+[INFO] +- org.easymock:easymock:jar:3.1:test
+[INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
+[INFO] |  \- org.objenesis:objenesis:jar:1.2:test
+[INFO] +- org.apache.tiles:tiles-servlet:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-servlet:jar:1.0.1:compile
+[INFO] |     \- org.apache.tiles:tiles-request-api:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-jsp:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-jsp:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-template:jar:3.0.1:compile
+[INFO] |  +- org.apache.tiles:tiles-api:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-autotag-core-runtime:jar:1.1.0:compile
+[INFO] \- org.apache.tiles:tiles-core:jar:3.0.1:compile
+[INFO]    \- commons-digester:commons-digester:jar:2.0:compile
+[INFO]       \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Info web module 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:tree (default-cli) @ Info-Web ---
+[INFO] com.mine.web:Info-Web:war:1.0
+[INFO] +- com.mine.ejb:Info-Ejb:ejb:1.0:compile
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- weblogic-server:weblogic:jar:12.1.1.0:system
+[INFO] +- javax.ejb:ejb-api:jar:3.0:compile
+[INFO] +- org.springframework:spring-core:jar:3.2.0.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] +- org.springframework:spring-web:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:3.2.0.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-webmvc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-beans:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-jdbc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-tx:jar:3.2.0.RELEASE:compile
+[INFO] +- com.caucho:hessian:jar:4.0.7:compile
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] +- org.directwebremoting:dwr:jar:3.0.M1:compile
+[INFO] |  \- org.mortbay.jetty:cometd:jar:6.1.4:compile
+[INFO] |     \- org.mortbay.jetty:jetty-util:jar:6.1.4:compile
+[INFO] +- org.springframework:spring-remoting:jar:2.0.8:compile
+[INFO] +- com.google.code.maven-play-plugin.org.hibernate:hibernate-core:jar:3.6.10.Final-patched-play-1.2.5:compile
+[INFO] |  +- antlr:antlr:jar:2.7.6:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.1:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final:compile
+[INFO] |  \- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] +- javax.transaction:transaction-api:jar:1.1-rev-1:compile
+[INFO] +- javax.transaction:jta:jar:1.1:compile
+[INFO] +- org.springframework:spring-orm:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:3.2.0.RELEASE:test
+[INFO] +- com.itextpdf:itextpdf:jar:5.3.4:compile
+[INFO] +- org.springframework.security:spring-security-config:jar:3.1.3.RELEASE:compile
+[INFO] |  \- org.springframework.security:spring-security-core:jar:3.1.3.RELEASE:compile
+[INFO] +- org.springframework.security:spring-security-web:jar:3.1.3.RELEASE:compile
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.2:compile
+[INFO] |  \- log4j:log4j:jar:1.2.17:compile
+[INFO] +- org.slf4j:slf4j-simple:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- javassist:javassist:jar:3.12.1.GA:compile
+[INFO] +- org.easymock:easymock:jar:3.1:test
+[INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
+[INFO] |  \- org.objenesis:objenesis:jar:1.2:test
+[INFO] +- org.apache.tiles:tiles-servlet:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-servlet:jar:1.0.1:compile
+[INFO] |     \- org.apache.tiles:tiles-request-api:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-jsp:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-jsp:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-template:jar:3.0.1:compile
+[INFO] |  +- org.apache.tiles:tiles-api:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-autotag-core-runtime:jar:1.1.0:compile
+[INFO] \- org.apache.tiles:tiles-core:jar:3.0.1:compile
+[INFO]    \- commons-digester:commons-digester:jar:2.0:compile
+[INFO]       \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ear assembly 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:tree (default-cli) @ Info ---
+[INFO] com.mine.ear:Info:ear:1.0
+[INFO] +- com.mine.web:Info-Web:war:1.0:compile
+[INFO] +- com.mine.web:Info-Web:pom:1.0:compile
+[INFO] +- com.mine.ejb:Info-Ejb:ejb:1.0:compile
+[INFO] +- weblogic-server:weblogic:jar:12.1.1.0:compile
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- javax.ejb:ejb-api:jar:3.0:compile
+[INFO] +- org.springframework:spring-core:jar:3.2.0.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] +- org.springframework:spring-web:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:3.2.0.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-webmvc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-beans:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-jdbc:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-tx:jar:3.2.0.RELEASE:compile
+[INFO] +- com.caucho:hessian:jar:4.0.7:compile
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] +- org.directwebremoting:dwr:jar:3.0.M1:compile
+[INFO] |  \- org.mortbay.jetty:cometd:jar:6.1.4:compile
+[INFO] |     \- org.mortbay.jetty:jetty-util:jar:6.1.4:compile
+[INFO] +- org.springframework:spring-remoting:jar:2.0.8:compile
+[INFO] +- com.google.code.maven-play-plugin.org.hibernate:hibernate-core:jar:3.6.10.Final-patched-play-1.2.5:compile
+[INFO] |  +- antlr:antlr:jar:2.7.6:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.1:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final:compile
+[INFO] |  \- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] +- javax.transaction:transaction-api:jar:1.1-rev-1:compile
+[INFO] +- javax.transaction:jta:jar:1.1:compile
+[INFO] +- org.springframework:spring-orm:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:3.2.0.RELEASE:test
+[INFO] +- com.itextpdf:itextpdf:jar:5.3.4:compile
+[INFO] +- org.springframework.security:spring-security-config:jar:3.1.3.RELEASE:compile
+[INFO] |  \- org.springframework.security:spring-security-core:jar:3.1.3.RELEASE:compile
+[INFO] +- org.springframework.security:spring-security-web:jar:3.1.3.RELEASE:compile
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.2:compile
+[INFO] |  \- log4j:log4j:jar:1.2.17:compile
+[INFO] +- org.slf4j:slf4j-simple:jar:1.7.2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.2:compile
+[INFO] +- javassist:javassist:jar:3.12.1.GA:compile
+[INFO] +- org.easymock:easymock:jar:3.1:test
+[INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
+[INFO] |  \- org.objenesis:objenesis:jar:1.2:test
+[INFO] +- org.apache.tiles:tiles-servlet:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-servlet:jar:1.0.1:compile
+[INFO] |     \- org.apache.tiles:tiles-request-api:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-jsp:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-request-jsp:jar:1.0.1:compile
+[INFO] +- org.apache.tiles:tiles-template:jar:3.0.1:compile
+[INFO] |  +- org.apache.tiles:tiles-api:jar:3.0.1:compile
+[INFO] |  \- org.apache.tiles:tiles-autotag-core-runtime:jar:1.1.0:compile
+[INFO] \- org.apache.tiles:tiles-core:jar:3.0.1:compile
+[INFO]    \- commons-digester:commons-digester:jar:2.0:compile
+[INFO]       \- commons-beanutils:commons-beanutils:jar:1.8.0:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Info application .................................. SUCCESS [2.068s]
+[INFO] Maven Info EJB module ............................. SUCCESS [0.183s]
+[INFO] Maven Info web module ............................. SUCCESS [0.148s]
+[INFO] ear assembly ...................................... SUCCESS [0.693s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.857s
+[INFO] Finished at: Sun Jan 13 21:01:48 EST 2013
+[INFO] Final Memory: 16M/301M
+[INFO] ------------------------------------------------------------------------

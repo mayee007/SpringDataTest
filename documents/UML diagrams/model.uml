@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_I34dIJr4EeG1SNzz-rMLkA">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dIZr4EeG1SNzz-rMLkA" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dIpr4EeG1SNzz-rMLkA" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dI5r4EeG1SNzz-rMLkA" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dJJr4EeG1SNzz-rMLkA" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dJZr4EeG1SNzz-rMLkA" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dJpr4EeG1SNzz-rMLkA" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dJ5r4EeG1SNzz-rMLkA" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_I34dKJr4EeG1SNzz-rMLkA" name="short"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_I34dKZr4EeG1SNzz-rMLkA" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_I34dKpr4EeG1SNzz-rMLkA" name="ProblemAndSolution">
+      <ownedAttribute xmi:id="_I34dK5r4EeG1SNzz-rMLkA" name="serialVersionUID" visibility="private" type="_I34dJ5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dLJr4EeG1SNzz-rMLkA" name="problemId" visibility="private" type="_I34dJpr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dLZr4EeG1SNzz-rMLkA" name="problem" visibility="private" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dLpr4EeG1SNzz-rMLkA" name="reasonForProblem" visibility="private" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dL5r4EeG1SNzz-rMLkA" name="solution" visibility="private" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dMJr4EeG1SNzz-rMLkA" name="technology" visibility="private" type="_I35EVpr4EeG1SNzz-rMLkA" association="_I35rQZr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dMZr4EeG1SNzz-rMLkA" name="submitDate" visibility="private" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I34dMpr4EeG1SNzz-rMLkA" name="modifiedDate" visibility="private" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_I34dM5r4EeG1SNzz-rMLkA" name="getProblemId" visibility="public">
+        <ownedParameter xmi:id="_I34dNJr4EeG1SNzz-rMLkA" name="return" type="_I34dJpr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dNZr4EeG1SNzz-rMLkA" name="setProblemId" visibility="public">
+        <ownedParameter xmi:id="_I34dNpr4EeG1SNzz-rMLkA" name="problemId" type="_I34dJpr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dN5r4EeG1SNzz-rMLkA" name="getProblem" visibility="public">
+        <ownedParameter xmi:id="_I34dOJr4EeG1SNzz-rMLkA" name="return" type="_I35Ef5r4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dOZr4EeG1SNzz-rMLkA" name="setProblem" visibility="public">
+        <ownedParameter xmi:id="_I34dOpr4EeG1SNzz-rMLkA" name="problem" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dO5r4EeG1SNzz-rMLkA" name="getReasonForProblem" visibility="public">
+        <ownedParameter xmi:id="_I34dPJr4EeG1SNzz-rMLkA" name="return" type="_I35Ef5r4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dPZr4EeG1SNzz-rMLkA" name="setReasonForProblem" visibility="public">
+        <ownedParameter xmi:id="_I34dPpr4EeG1SNzz-rMLkA" name="reasonForProblem" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dP5r4EeG1SNzz-rMLkA" name="getSolution" visibility="public">
+        <ownedParameter xmi:id="_I34dQJr4EeG1SNzz-rMLkA" name="return" type="_I35Ef5r4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dQZr4EeG1SNzz-rMLkA" name="setSolution" visibility="public">
+        <ownedParameter xmi:id="_I34dQpr4EeG1SNzz-rMLkA" name="solution" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dQ5r4EeG1SNzz-rMLkA" name="getSubmitDate" visibility="public">
+        <ownedParameter xmi:id="_I34dRJr4EeG1SNzz-rMLkA" name="return" type="_I35EgJr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dRZr4EeG1SNzz-rMLkA" name="setSubmitDate" visibility="public">
+        <ownedParameter xmi:id="_I34dRpr4EeG1SNzz-rMLkA" name="submitDate" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dR5r4EeG1SNzz-rMLkA" name="getModifiedDate" visibility="public">
+        <ownedParameter xmi:id="_I34dSJr4EeG1SNzz-rMLkA" name="return" type="_I35EgJr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dSZr4EeG1SNzz-rMLkA" name="setModifiedDate" visibility="public">
+        <ownedParameter xmi:id="_I34dSpr4EeG1SNzz-rMLkA" name="modifiedDate" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dS5r4EeG1SNzz-rMLkA" name="convertDatatoHtml" visibility="public">
+        <ownedParameter xmi:id="_I34dTJr4EeG1SNzz-rMLkA" name="data" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_I34dTZr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dTpr4EeG1SNzz-rMLkA" name="getTechnology" visibility="public">
+        <ownedParameter xmi:id="_I34dT5r4EeG1SNzz-rMLkA" name="return" type="_I35EVpr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dUJr4EeG1SNzz-rMLkA" name="setTechnology" visibility="public">
+        <ownedParameter xmi:id="_I34dUZr4EeG1SNzz-rMLkA" name="technology" type="_I35EVpr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I34dUpr4EeG1SNzz-rMLkA" name="toString" visibility="public">
+        <ownedParameter xmi:id="_I34dU5r4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I35EMJr4EeG1SNzz-rMLkA" name="Info">
+      <ownedAttribute xmi:id="_I35EMZr4EeG1SNzz-rMLkA" name="serialVersionUID" visibility="private" type="_I34dJ5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EMpr4EeG1SNzz-rMLkA" name="infoId" visibility="private" type="_I34dJpr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EM5r4EeG1SNzz-rMLkA" name="subject" visibility="private" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35ENJr4EeG1SNzz-rMLkA" name="description" visibility="private" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35ENZr4EeG1SNzz-rMLkA" name="technology" visibility="private" type="_I35EVpr4EeG1SNzz-rMLkA" association="_I35rQ5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35ENpr4EeG1SNzz-rMLkA" name="submitDate" visibility="private" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EN5r4EeG1SNzz-rMLkA" name="modifiedDate" visibility="private" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_I35EOJr4EeG1SNzz-rMLkA" name="getInfoId" visibility="public">
+        <ownedParameter xmi:id="_I35EOZr4EeG1SNzz-rMLkA" name="return" type="_I34dJpr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EOpr4EeG1SNzz-rMLkA" name="setInfoId" visibility="public">
+        <ownedParameter xmi:id="_I35EO5r4EeG1SNzz-rMLkA" name="infoId" type="_I34dJpr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EPJr4EeG1SNzz-rMLkA" name="getSubject" visibility="public">
+        <ownedParameter xmi:id="_I35EPZr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EPpr4EeG1SNzz-rMLkA" name="setSubject" visibility="public">
+        <ownedParameter xmi:id="_I35EP5r4EeG1SNzz-rMLkA" name="subject" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EQJr4EeG1SNzz-rMLkA" name="getDescription" visibility="public">
+        <ownedParameter xmi:id="_I35EQZr4EeG1SNzz-rMLkA" name="return" type="_I35Ef5r4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EQpr4EeG1SNzz-rMLkA" name="setDescription" visibility="public">
+        <ownedParameter xmi:id="_I35EQ5r4EeG1SNzz-rMLkA" name="description" type="_I35Ef5r4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35ERJr4EeG1SNzz-rMLkA" name="getSubmitDate" visibility="public">
+        <ownedParameter xmi:id="_I35ERZr4EeG1SNzz-rMLkA" name="return" type="_I35EgJr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35ERpr4EeG1SNzz-rMLkA" name="setSubmitDate" visibility="public">
+        <ownedParameter xmi:id="_I35ER5r4EeG1SNzz-rMLkA" name="submitDate" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35ESJr4EeG1SNzz-rMLkA" name="getModifiedDate" visibility="public">
+        <ownedParameter xmi:id="_I35ESZr4EeG1SNzz-rMLkA" name="return" type="_I35EgJr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35ESpr4EeG1SNzz-rMLkA" name="setModifiedDate" visibility="public">
+        <ownedParameter xmi:id="_I35ES5r4EeG1SNzz-rMLkA" name="modifiedDate" type="_I35EgJr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35ETJr4EeG1SNzz-rMLkA" name="getDescriptionAsString" visibility="public">
+        <ownedParameter xmi:id="_I35ETZr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35ETpr4EeG1SNzz-rMLkA" name="setDescriptionAsString" visibility="public">
+        <ownedParameter xmi:id="_I35ET5r4EeG1SNzz-rMLkA" name="str" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EUJr4EeG1SNzz-rMLkA" name="getTechnology" visibility="public">
+        <ownedParameter xmi:id="_I35EUZr4EeG1SNzz-rMLkA" name="return" type="_I35EVpr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EUpr4EeG1SNzz-rMLkA" name="setTechnology" visibility="public">
+        <ownedParameter xmi:id="_I35EU5r4EeG1SNzz-rMLkA" name="technology" type="_I35EVpr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EVJr4EeG1SNzz-rMLkA" name="toString" visibility="public">
+        <ownedParameter xmi:id="_I35EVZr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I35EVpr4EeG1SNzz-rMLkA" name="Technology">
+      <ownedAttribute xmi:id="_I35EV5r4EeG1SNzz-rMLkA" name="serialVersionUID" visibility="private" type="_I34dJ5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EWJr4EeG1SNzz-rMLkA" name="technologyId" visibility="private" type="_I34dJpr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EWZr4EeG1SNzz-rMLkA" name="technologyType" visibility="private" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EWpr4EeG1SNzz-rMLkA" name="category" visibility="private" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_I35EW5r4EeG1SNzz-rMLkA" name="getTechnologyId" visibility="public">
+        <ownedParameter xmi:id="_I35EXJr4EeG1SNzz-rMLkA" name="return" type="_I34dJpr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EXZr4EeG1SNzz-rMLkA" name="setTechnologyId" visibility="public">
+        <ownedParameter xmi:id="_I35EXpr4EeG1SNzz-rMLkA" name="technologyId" type="_I34dJpr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EX5r4EeG1SNzz-rMLkA" name="getTechnologyType" visibility="public">
+        <ownedParameter xmi:id="_I35EYJr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EYZr4EeG1SNzz-rMLkA" name="setTechnologyType" visibility="public">
+        <ownedParameter xmi:id="_I35EYpr4EeG1SNzz-rMLkA" name="technologyType" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EY5r4EeG1SNzz-rMLkA" name="getCategory" visibility="public">
+        <ownedParameter xmi:id="_I35EZJr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EZZr4EeG1SNzz-rMLkA" name="setCategory" visibility="public">
+        <ownedParameter xmi:id="_I35EZpr4EeG1SNzz-rMLkA" name="category" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EZ5r4EeG1SNzz-rMLkA" name="toString" visibility="public">
+        <ownedParameter xmi:id="_I35EaJr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I35EaZr4EeG1SNzz-rMLkA" name="User">
+      <ownedAttribute xmi:id="_I35Eapr4EeG1SNzz-rMLkA" name="serialVersionUID" visibility="private" type="_I34dJ5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35Ea5r4EeG1SNzz-rMLkA" name="userId" visibility="private" type="_I35Egpr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EbJr4EeG1SNzz-rMLkA" name="userName" visibility="private" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35EbZr4EeG1SNzz-rMLkA" name="age" visibility="private" type="_I35Eg5r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_I35Ebpr4EeG1SNzz-rMLkA" name="registered" visibility="private" type="_I35rQJr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_I35Eb5r4EeG1SNzz-rMLkA" name="getUserId" visibility="public">
+        <ownedParameter xmi:id="_I35EcJr4EeG1SNzz-rMLkA" name="return" type="_I35Egpr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EcZr4EeG1SNzz-rMLkA" name="setUserId" visibility="public">
+        <ownedParameter xmi:id="_I35Ecpr4EeG1SNzz-rMLkA" name="userId" type="_I35Egpr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35Ec5r4EeG1SNzz-rMLkA" name="getUserName" visibility="public">
+        <ownedParameter xmi:id="_I35EdJr4EeG1SNzz-rMLkA" name="return" type="_I35EgZr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EdZr4EeG1SNzz-rMLkA" name="setUserName" visibility="public">
+        <ownedParameter xmi:id="_I35Edpr4EeG1SNzz-rMLkA" name="userName" type="_I35EgZr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35Ed5r4EeG1SNzz-rMLkA" name="getAge" visibility="public">
+        <ownedParameter xmi:id="_I35EeJr4EeG1SNzz-rMLkA" name="return" type="_I35Eg5r4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EeZr4EeG1SNzz-rMLkA" name="setAge" visibility="public">
+        <ownedParameter xmi:id="_I35Eepr4EeG1SNzz-rMLkA" name="age" type="_I35Eg5r4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35Ee5r4EeG1SNzz-rMLkA" name="getRegistered" visibility="public">
+        <ownedParameter xmi:id="_I35EfJr4EeG1SNzz-rMLkA" name="return" type="_I35rQJr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_I35EfZr4EeG1SNzz-rMLkA" name="setRegistered" visibility="public">
+        <ownedParameter xmi:id="_I35Efpr4EeG1SNzz-rMLkA" name="registered" type="_I35rQJr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_I35Ef5r4EeG1SNzz-rMLkA" name="Clob"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_I35EgJr4EeG1SNzz-rMLkA" name="Date"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_I35EgZr4EeG1SNzz-rMLkA" name="String"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_I35Egpr4EeG1SNzz-rMLkA" name="Long"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_I35Eg5r4EeG1SNzz-rMLkA" name="Integer"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_I35rQJr4EeG1SNzz-rMLkA" name="Boolean"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_I35rQZr4EeG1SNzz-rMLkA" memberEnd="_I34dMJr4EeG1SNzz-rMLkA _I35rQpr4EeG1SNzz-rMLkA">
+      <ownedEnd xmi:id="_I35rQpr4EeG1SNzz-rMLkA" name="target" type="_I34dKpr4EeG1SNzz-rMLkA" association="_I35rQZr4EeG1SNzz-rMLkA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_I35rQ5r4EeG1SNzz-rMLkA" memberEnd="_I35ENZr4EeG1SNzz-rMLkA _I35rRJr4EeG1SNzz-rMLkA">
+      <ownedEnd xmi:id="_I35rRJr4EeG1SNzz-rMLkA" name="target" type="_I35EMJr4EeG1SNzz-rMLkA" association="_I35rQ5r4EeG1SNzz-rMLkA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_FDXCp5r4EeG1SNzz-rMLkA" name="controllers">
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDXCqJr4EeG1SNzz-rMLkA" name="AddUserController">
+      <ownedAttribute xmi:id="_FDXCqZr4EeG1SNzz-rMLkA" name="userDao" type="_FDY35Jr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDXCqpr4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDXCq5r4EeG1SNzz-rMLkA" name="setUserDao" visibility="public">
+        <ownedParameter xmi:id="_FDXCrJr4EeG1SNzz-rMLkA" name="userDao" type="_FDY35pr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXCrZr4EeG1SNzz-rMLkA" name="addUser" visibility="public">
+        <ownedParameter xmi:id="_FDXCrpr4EeG1SNzz-rMLkA" name="req" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXCr5r4EeG1SNzz-rMLkA" name="res" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXCsJr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDXCsZr4EeG1SNzz-rMLkA" name="TechnologyPageController">
+      <ownedAttribute xmi:id="_FDXCs5r4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDXCtJr4EeG1SNzz-rMLkA" name="techDao" type="_FDY365r4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDXCtZr4EeG1SNzz-rMLkA" name="setTechnologyDao" visibility="public">
+        <ownedParameter xmi:id="_FDXCtpr4EeG1SNzz-rMLkA" name="techDao" type="_FDY37Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXCt5r4EeG1SNzz-rMLkA" name="listTechnology" visibility="public">
+        <ownedParameter xmi:id="_FDXCuJr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXCuZr4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXCupr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXCu5r4EeG1SNzz-rMLkA" name="addTechnology" visibility="public">
+        <ownedParameter xmi:id="_FDXCvJr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXCvZr4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXCvpr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXCv5r4EeG1SNzz-rMLkA" name="getAllTechnologyOnly" visibility="public">
+        <ownedParameter xmi:id="_FDXCwJr4EeG1SNzz-rMLkA" name="return" type="_FDY37Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXCwZr4EeG1SNzz-rMLkA" name="getAllCategoryOnly" visibility="public">
+        <ownedParameter xmi:id="_FDXCwpr4EeG1SNzz-rMLkA" name="return" type="_FDY37Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDXCw5r4EeG1SNzz-rMLkA" name="GeneratePDFController">
+      <ownedAttribute xmi:id="_FDXpsJr4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDXpsZr4EeG1SNzz-rMLkA" name="infoDao" type="_FDY37pr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDXpspr4EeG1SNzz-rMLkA" name="problemDao" type="_FDY375r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDXps5r4EeG1SNzz-rMLkA" name="techDao" type="_FDY365r4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDXptJr4EeG1SNzz-rMLkA" name="setTechnologyDao" visibility="public">
+        <ownedParameter xmi:id="_FDXptZr4EeG1SNzz-rMLkA" name="techDao" type="_FDY37Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXptpr4EeG1SNzz-rMLkA" name="setInfoDao" visibility="public">
+        <ownedParameter xmi:id="_FDXpt5r4EeG1SNzz-rMLkA" name="infoDao" type="_FDY38Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpuJr4EeG1SNzz-rMLkA" name="setProblemDao" visibility="public">
+        <ownedParameter xmi:id="_FDXpuZr4EeG1SNzz-rMLkA" name="problemDao" type="_FDY38Zr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpupr4EeG1SNzz-rMLkA" name="generatePDF" visibility="public">
+        <ownedParameter xmi:id="_FDXpu5r4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpvJr4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpvZr4EeG1SNzz-rMLkA" name="addInfo" visibility="public">
+        <ownedParameter xmi:id="_FDXpvpr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpv5r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpwJr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpwZr4EeG1SNzz-rMLkA" name="infoDetails" visibility="public">
+        <ownedParameter xmi:id="_FDXpwpr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpw5r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpxJr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpxZr4EeG1SNzz-rMLkA" name="addInfoJsp" visibility="public">
+        <ownedParameter xmi:id="_FDXpxpr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpx5r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXpyJr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpyZr4EeG1SNzz-rMLkA" name="getDateTime" visibility="private">
+        <ownedParameter xmi:id="_FDXpypr4EeG1SNzz-rMLkA" name="return" type="_FDY38pr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDXpy5r4EeG1SNzz-rMLkA" name="DWRControllerUtil">
+      <ownedAttribute xmi:id="_FDXpzJr4EeG1SNzz-rMLkA" name="technologyDao" type="_FDY365r4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDXpzZr4EeG1SNzz-rMLkA" name="setTechnologyDao" visibility="public">
+        <ownedParameter xmi:id="_FDXpzpr4EeG1SNzz-rMLkA" name="technologyDao" type="_FDY365r4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXpz5r4EeG1SNzz-rMLkA" name="getAllTechnologyOnly" visibility="public">
+        <ownedParameter xmi:id="_FDXp0Jr4EeG1SNzz-rMLkA" name="return" type="_FDY37Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXp0Zr4EeG1SNzz-rMLkA" name="getAllCategoryOnly" visibility="public">
+        <ownedParameter xmi:id="_FDXp0pr4EeG1SNzz-rMLkA" name="return" type="_FDY37Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDXp05r4EeG1SNzz-rMLkA" name="getAllCategoryByTechnology" visibility="public">
+        <ownedParameter xmi:id="_FDXp1Jr4EeG1SNzz-rMLkA" name="techType" type="_FDY385r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDXp1Zr4EeG1SNzz-rMLkA" name="return" type="_FDY37Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDXp1pr4EeG1SNzz-rMLkA" name="UserController">
+      <ownedAttribute xmi:id="_FDXp2Jr4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDXp2Zr4EeG1SNzz-rMLkA" name="userDao" type="_FDY35Jr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDXp2pr4EeG1SNzz-rMLkA" name="setUserDao" visibility="public">
+        <ownedParameter xmi:id="_FDYQwJr4EeG1SNzz-rMLkA" name="userDao" type="_FDY35pr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQwZr4EeG1SNzz-rMLkA" name="handleRequestInternal" visibility="public">
+        <ownedParameter xmi:id="_FDYQwpr4EeG1SNzz-rMLkA" name="req" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQw5r4EeG1SNzz-rMLkA" name="res" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQxJr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDYQxZr4EeG1SNzz-rMLkA" name="MainPageController">
+      <ownedAttribute xmi:id="_FDYQx5r4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDYQyJr4EeG1SNzz-rMLkA" name="handleRequestInternal" visibility="public">
+        <ownedParameter xmi:id="_FDYQyZr4EeG1SNzz-rMLkA" name="req" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQypr4EeG1SNzz-rMLkA" name="res" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQy5r4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDYQzJr4EeG1SNzz-rMLkA" name="InfoController">
+      <ownedAttribute xmi:id="_FDYQzpr4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDYQz5r4EeG1SNzz-rMLkA" name="infoDao" type="_FDY37pr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDYQ0Jr4EeG1SNzz-rMLkA" name="technologyDao" type="_FDY365r4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDYQ0Zr4EeG1SNzz-rMLkA" name="setTechnologyDao" visibility="public">
+        <ownedParameter xmi:id="_FDYQ0pr4EeG1SNzz-rMLkA" name="technologyDao" type="_FDY37Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQ05r4EeG1SNzz-rMLkA" name="setInfoDao" visibility="public">
+        <ownedParameter xmi:id="_FDYQ1Jr4EeG1SNzz-rMLkA" name="infoDao" type="_FDY38Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQ1Zr4EeG1SNzz-rMLkA" name="listInfo" visibility="public">
+        <ownedParameter xmi:id="_FDYQ1pr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ15r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ2Jr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQ2Zr4EeG1SNzz-rMLkA" name="addInfo" visibility="public">
+        <ownedParameter xmi:id="_FDYQ2pr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ25r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ3Jr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQ3Zr4EeG1SNzz-rMLkA" name="infoDetails" visibility="public">
+        <ownedParameter xmi:id="_FDYQ3pr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ35r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ4Jr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQ4Zr4EeG1SNzz-rMLkA" name="addInfoJsp" visibility="public">
+        <ownedParameter xmi:id="_FDYQ4pr4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ45r4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDYQ5Jr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDYQ5Zr4EeG1SNzz-rMLkA" name="getDateTime" visibility="private">
+        <ownedParameter xmi:id="_FDYQ5pr4EeG1SNzz-rMLkA" name="return" type="_FDY38pr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FDYQ55r4EeG1SNzz-rMLkA" name="ProblemController">
+      <ownedAttribute xmi:id="_FDYQ6Zr4EeG1SNzz-rMLkA" name="logger" visibility="protected" type="_FDY35Zr4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDY30Jr4EeG1SNzz-rMLkA" name="problemDao" type="_FDY375r4EeG1SNzz-rMLkA"/>
+      <ownedAttribute xmi:id="_FDY30Zr4EeG1SNzz-rMLkA" name="techDao" type="_FDY365r4EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_FDY30pr4EeG1SNzz-rMLkA" name="setTechnologyDao" visibility="public">
+        <ownedParameter xmi:id="_FDY305r4EeG1SNzz-rMLkA" name="techDao" type="_FDY37Jr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDY31Jr4EeG1SNzz-rMLkA" name="setProblemDao" visibility="public">
+        <ownedParameter xmi:id="_FDY31Zr4EeG1SNzz-rMLkA" name="problemDao" type="_FDY38Zr4EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDY31pr4EeG1SNzz-rMLkA" name="listProblem" visibility="public">
+        <ownedParameter xmi:id="_FDY315r4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDY32Jr4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDY32Zr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDY32pr4EeG1SNzz-rMLkA" name="addProblem" visibility="public">
+        <ownedParameter xmi:id="_FDY325r4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDY33Jr4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDY33Zr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDY33pr4EeG1SNzz-rMLkA" name="problemDetails" visibility="public">
+        <ownedParameter xmi:id="_FDY335r4EeG1SNzz-rMLkA" name="request" type="_FDY355r4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDY34Jr4EeG1SNzz-rMLkA" name="response" type="_FDY36Jr4EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_FDY34Zr4EeG1SNzz-rMLkA" name="return" type="_FDY36Zr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_FDY34pr4EeG1SNzz-rMLkA" name="getDateTime" visibility="private">
+        <ownedParameter xmi:id="_FDY345r4EeG1SNzz-rMLkA" name="return" type="_FDY38pr4EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY35Jr4EeG1SNzz-rMLkA" name="UserDao"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY35Zr4EeG1SNzz-rMLkA" name="Log"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY35pr4EeG1SNzz-rMLkA" name="UserDaoImpl"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY355r4EeG1SNzz-rMLkA" name="HttpServletRequest"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY36Jr4EeG1SNzz-rMLkA" name="HttpServletResponse"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY36Zr4EeG1SNzz-rMLkA" name="ModelAndView"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY36pr4EeG1SNzz-rMLkA" name="MultiActionController"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY365r4EeG1SNzz-rMLkA" name="TechnologyDao"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY37Jr4EeG1SNzz-rMLkA" name="TechnologyDaoImpl"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY37Zr4EeG1SNzz-rMLkA" name="List"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY37pr4EeG1SNzz-rMLkA" name="InfoDao"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY375r4EeG1SNzz-rMLkA" name="ProblemDao"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY38Jr4EeG1SNzz-rMLkA" name="InfoDaoImpl"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY38Zr4EeG1SNzz-rMLkA" name="ProblemDaoImpl"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY38pr4EeG1SNzz-rMLkA" name="Date"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY385r4EeG1SNzz-rMLkA" name="String"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_FDY39Jr4EeG1SNzz-rMLkA" name="AbstractController"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSa80Jr5EeG1SNzz-rMLkA" name="dao">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSa80Zr5EeG1SNzz-rMLkA" name="ProblemDaoImpl" clientDependency="_xSa805r5EeG1SNzz-rMLkA">
+      <ownedAttribute xmi:id="_xSa80pr5EeG1SNzz-rMLkA" name="hibernateTemplate" visibility="private" type="_xSbkJZr5EeG1SNzz-rMLkA"/>
+      <interfaceRealization xmi:id="_xSa805r5EeG1SNzz-rMLkA" name="ProblemDao" supplier="_xSbj5Jr5EeG1SNzz-rMLkA" client="_xSa80Zr5EeG1SNzz-rMLkA" contract="_xSbj5Jr5EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_xSa81Jr5EeG1SNzz-rMLkA" name="setHibernateTemplate" visibility="public">
+        <ownedParameter xmi:id="_xSa81Zr5EeG1SNzz-rMLkA" name="sessionFactory" type="_xSbkJpr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa81pr5EeG1SNzz-rMLkA" name="saveProblem" visibility="public">
+        <ownedParameter xmi:id="_xSa815r5EeG1SNzz-rMLkA" name="Problem" type="_xSbkJ5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa82Jr5EeG1SNzz-rMLkA" name="deleteProblem" visibility="public">
+        <ownedParameter xmi:id="_xSa82Zr5EeG1SNzz-rMLkA" name="Problem" type="_xSbkJ5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa82pr5EeG1SNzz-rMLkA" name="getAllProblem" visibility="public">
+        <ownedParameter xmi:id="_xSa825r5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa83Jr5EeG1SNzz-rMLkA" name="selectProblemById" visibility="public">
+        <ownedParameter xmi:id="_xSa83Zr5EeG1SNzz-rMLkA" name="ProblemId"/>
+        <ownedParameter xmi:id="_xSa83pr5EeG1SNzz-rMLkA" name="return" type="_xSbkJ5r5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_xSa835r5EeG1SNzz-rMLkA" name="InfoDao">
+      <ownedOperation xmi:id="_xSa84Jr5EeG1SNzz-rMLkA" name="saveInfo" visibility="public">
+        <ownedParameter xmi:id="_xSa84Zr5EeG1SNzz-rMLkA" name="tech" type="_xSbkKZr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa84pr5EeG1SNzz-rMLkA" name="getAllInfo" visibility="public">
+        <ownedParameter xmi:id="_xSa845r5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa85Jr5EeG1SNzz-rMLkA" name="selectInfoById" visibility="public">
+        <ownedParameter xmi:id="_xSa85Zr5EeG1SNzz-rMLkA" name="infoId"/>
+        <ownedParameter xmi:id="_xSa85pr5EeG1SNzz-rMLkA" name="return" type="_xSbkKZr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa855r5EeG1SNzz-rMLkA" name="selectInfoBySubject" visibility="public">
+        <ownedParameter xmi:id="_xSa86Jr5EeG1SNzz-rMLkA" name="subject" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSa86Zr5EeG1SNzz-rMLkA" name="return" type="_xSbkKZr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa86pr5EeG1SNzz-rMLkA" name="deleteInfo" visibility="public">
+        <ownedParameter xmi:id="_xSa865r5EeG1SNzz-rMLkA" name="tech" type="_xSbkKZr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_xSa87Jr5EeG1SNzz-rMLkA" name="TechnologyDao">
+      <ownedOperation xmi:id="_xSa87Zr5EeG1SNzz-rMLkA" name="saveTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSa87pr5EeG1SNzz-rMLkA" name="tech" type="_xSbkK5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa875r5EeG1SNzz-rMLkA" name="getAllTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSa88Jr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa88Zr5EeG1SNzz-rMLkA" name="selectTechnologyById" visibility="public">
+        <ownedParameter xmi:id="_xSa88pr5EeG1SNzz-rMLkA" name="techId"/>
+        <ownedParameter xmi:id="_xSa885r5EeG1SNzz-rMLkA" name="return" type="_xSbkK5r5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa89Jr5EeG1SNzz-rMLkA" name="deleteTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSa89Zr5EeG1SNzz-rMLkA" name="tech" type="_xSbkK5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa89pr5EeG1SNzz-rMLkA" name="getAllTechnologyOnly" visibility="public">
+        <ownedParameter xmi:id="_xSa895r5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa8-Jr5EeG1SNzz-rMLkA" name="getAllCategoryOnly" visibility="public">
+        <ownedParameter xmi:id="_xSa8-Zr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa8-pr5EeG1SNzz-rMLkA" name="getAllCategoryByTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSa8-5r5EeG1SNzz-rMLkA" name="techType" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSa8_Jr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa8_Zr5EeG1SNzz-rMLkA" name="getTechnologyIdByName" visibility="public">
+        <ownedParameter xmi:id="_xSa8_pr5EeG1SNzz-rMLkA" name="tech" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSa8_5r5EeG1SNzz-rMLkA" name="cat" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSa9AJr5EeG1SNzz-rMLkA" name="return" type="_xSbkK5r5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSa9AZr5EeG1SNzz-rMLkA" name="UserDaoImpl" clientDependency="_xSa9A5r5EeG1SNzz-rMLkA">
+      <ownedAttribute xmi:id="_xSa9Apr5EeG1SNzz-rMLkA" name="hibernateTemplate" visibility="private" type="_xSbkJZr5EeG1SNzz-rMLkA"/>
+      <interfaceRealization xmi:id="_xSa9A5r5EeG1SNzz-rMLkA" name="UserDao" supplier="_xSbj7pr5EeG1SNzz-rMLkA" client="_xSa9AZr5EeG1SNzz-rMLkA" contract="_xSbj7pr5EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_xSa9BJr5EeG1SNzz-rMLkA" name="setHibernateTemplate" visibility="public">
+        <ownedParameter xmi:id="_xSa9BZr5EeG1SNzz-rMLkA" name="sessionFactory" type="_xSbkJpr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa9Bpr5EeG1SNzz-rMLkA" name="saveUser" visibility="public">
+        <ownedParameter xmi:id="_xSa9B5r5EeG1SNzz-rMLkA" name="user" type="_xSbkLJr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa9CJr5EeG1SNzz-rMLkA" name="deleteUser" visibility="public">
+        <ownedParameter xmi:id="_xSa9CZr5EeG1SNzz-rMLkA" name="user" type="_xSbkLJr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa9Cpr5EeG1SNzz-rMLkA" name="getAllUser" visibility="public">
+        <ownedParameter xmi:id="_xSa9C5r5EeG1SNzz-rMLkA" name="user" type="_xSbkLJr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSa9DJr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSa9DZr5EeG1SNzz-rMLkA" name="getAllUsers" visibility="public">
+        <ownedParameter xmi:id="_xSbj4Jr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj4Zr5EeG1SNzz-rMLkA" name="selectUserById" visibility="public">
+        <ownedParameter xmi:id="_xSbj4pr5EeG1SNzz-rMLkA" name="userId" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbj45r5EeG1SNzz-rMLkA" name="return" type="_xSbkLJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_xSbj5Jr5EeG1SNzz-rMLkA" name="ProblemDao">
+      <ownedOperation xmi:id="_xSbj5Zr5EeG1SNzz-rMLkA" name="saveProblem" visibility="public">
+        <ownedParameter xmi:id="_xSbj5pr5EeG1SNzz-rMLkA" name="tech" type="_xSbkJ5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj55r5EeG1SNzz-rMLkA" name="getAllProblem" visibility="public">
+        <ownedParameter xmi:id="_xSbj6Jr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj6Zr5EeG1SNzz-rMLkA" name="selectProblemById" visibility="public">
+        <ownedParameter xmi:id="_xSbj6pr5EeG1SNzz-rMLkA" name="techId"/>
+        <ownedParameter xmi:id="_xSbj65r5EeG1SNzz-rMLkA" name="return" type="_xSbkJ5r5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj7Jr5EeG1SNzz-rMLkA" name="deleteProblem" visibility="public">
+        <ownedParameter xmi:id="_xSbj7Zr5EeG1SNzz-rMLkA" name="tech" type="_xSbkJ5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_xSbj7pr5EeG1SNzz-rMLkA" name="UserDao">
+      <ownedOperation xmi:id="_xSbj75r5EeG1SNzz-rMLkA" name="saveUser" visibility="public">
+        <ownedParameter xmi:id="_xSbj8Jr5EeG1SNzz-rMLkA" name="user" type="_xSbkLJr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj8Zr5EeG1SNzz-rMLkA" name="getAllUser" visibility="public">
+        <ownedParameter xmi:id="_xSbj8pr5EeG1SNzz-rMLkA" name="user" type="_xSbkLJr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbj85r5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj9Jr5EeG1SNzz-rMLkA" name="getAllUsers" visibility="public">
+        <ownedParameter xmi:id="_xSbj9Zr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj9pr5EeG1SNzz-rMLkA" name="selectUserById" visibility="public">
+        <ownedParameter xmi:id="_xSbj95r5EeG1SNzz-rMLkA" name="userId" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbj-Jr5EeG1SNzz-rMLkA" name="return" type="_xSbkLJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbj-Zr5EeG1SNzz-rMLkA" name="deleteUser" visibility="public">
+        <ownedParameter xmi:id="_xSbj-pr5EeG1SNzz-rMLkA" name="user" type="_xSbkLJr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSbj-5r5EeG1SNzz-rMLkA" name="InfoDaoImpl" clientDependency="_xSbj_Zr5EeG1SNzz-rMLkA">
+      <ownedAttribute xmi:id="_xSbj_Jr5EeG1SNzz-rMLkA" name="hibernateTemplate" visibility="private" type="_xSbkJZr5EeG1SNzz-rMLkA"/>
+      <interfaceRealization xmi:id="_xSbj_Zr5EeG1SNzz-rMLkA" name="InfoDao" supplier="_xSa835r5EeG1SNzz-rMLkA" client="_xSbj-5r5EeG1SNzz-rMLkA" contract="_xSa835r5EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_xSbj_pr5EeG1SNzz-rMLkA" name="setHibernateTemplate" visibility="public">
+        <ownedParameter xmi:id="_xSbj_5r5EeG1SNzz-rMLkA" name="sessionFactory" type="_xSbkJpr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkAJr5EeG1SNzz-rMLkA" name="saveInfo" visibility="public">
+        <ownedParameter xmi:id="_xSbkAZr5EeG1SNzz-rMLkA" name="info" type="_xSbkKZr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkApr5EeG1SNzz-rMLkA" name="deleteInfo" visibility="public">
+        <ownedParameter xmi:id="_xSbkA5r5EeG1SNzz-rMLkA" name="info" type="_xSbkKZr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkBJr5EeG1SNzz-rMLkA" name="getAllInfo" visibility="public">
+        <ownedParameter xmi:id="_xSbkBZr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkBpr5EeG1SNzz-rMLkA" name="selectInfoById" visibility="public">
+        <ownedParameter xmi:id="_xSbkB5r5EeG1SNzz-rMLkA" name="infoId"/>
+        <ownedParameter xmi:id="_xSbkCJr5EeG1SNzz-rMLkA" name="return" type="_xSbkKZr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkCZr5EeG1SNzz-rMLkA" name="selectInfoBySubject" visibility="public">
+        <ownedParameter xmi:id="_xSbkCpr5EeG1SNzz-rMLkA" name="subject" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbkC5r5EeG1SNzz-rMLkA" name="return" type="_xSbkKZr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSbkDJr5EeG1SNzz-rMLkA" name="TechnologyDaoImpl" clientDependency="_xSbkDpr5EeG1SNzz-rMLkA">
+      <ownedAttribute xmi:id="_xSbkDZr5EeG1SNzz-rMLkA" name="hibernateTemplate" visibility="private" type="_xSbkJZr5EeG1SNzz-rMLkA"/>
+      <interfaceRealization xmi:id="_xSbkDpr5EeG1SNzz-rMLkA" name="TechnologyDao" supplier="_xSa87Jr5EeG1SNzz-rMLkA" client="_xSbkDJr5EeG1SNzz-rMLkA" contract="_xSa87Jr5EeG1SNzz-rMLkA"/>
+      <ownedOperation xmi:id="_xSbkD5r5EeG1SNzz-rMLkA" name="setHibernateTemplate" visibility="public">
+        <ownedParameter xmi:id="_xSbkEJr5EeG1SNzz-rMLkA" name="sessionFactory" type="_xSbkJpr5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkEZr5EeG1SNzz-rMLkA" name="saveTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSbkEpr5EeG1SNzz-rMLkA" name="Technology" type="_xSbkK5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkE5r5EeG1SNzz-rMLkA" name="deleteTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSbkFJr5EeG1SNzz-rMLkA" name="Technology" type="_xSbkK5r5EeG1SNzz-rMLkA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkFZr5EeG1SNzz-rMLkA" name="getAllTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSbkFpr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkF5r5EeG1SNzz-rMLkA" name="selectTechnologyById" visibility="public">
+        <ownedParameter xmi:id="_xSbkGJr5EeG1SNzz-rMLkA" name="TechnologyId"/>
+        <ownedParameter xmi:id="_xSbkGZr5EeG1SNzz-rMLkA" name="return" type="_xSbkK5r5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkGpr5EeG1SNzz-rMLkA" name="getAllCategoryOnly" visibility="public">
+        <ownedParameter xmi:id="_xSbkG5r5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkHJr5EeG1SNzz-rMLkA" name="getAllTechnologyOnly" visibility="public">
+        <ownedParameter xmi:id="_xSbkHZr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkHpr5EeG1SNzz-rMLkA" name="getTechnologyIdByName" visibility="public">
+        <ownedParameter xmi:id="_xSbkH5r5EeG1SNzz-rMLkA" name="tech" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbkIJr5EeG1SNzz-rMLkA" name="cat" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbkIZr5EeG1SNzz-rMLkA" name="return" type="_xSbkK5r5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xSbkIpr5EeG1SNzz-rMLkA" name="getAllCategoryByTechnology" visibility="public">
+        <ownedParameter xmi:id="_xSbkI5r5EeG1SNzz-rMLkA" name="techType" type="_xSbkKpr5EeG1SNzz-rMLkA"/>
+        <ownedParameter xmi:id="_xSbkJJr5EeG1SNzz-rMLkA" name="return" type="_xSbkKJr5EeG1SNzz-rMLkA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkJZr5EeG1SNzz-rMLkA" name="HibernateTemplate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkJpr5EeG1SNzz-rMLkA" name="SessionFactory"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkJ5r5EeG1SNzz-rMLkA" name="ProblemAndSolution"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkKJr5EeG1SNzz-rMLkA" name="List"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkKZr5EeG1SNzz-rMLkA" name="Info"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkKpr5EeG1SNzz-rMLkA" name="String"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkK5r5EeG1SNzz-rMLkA" name="Technology"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSbkLJr5EeG1SNzz-rMLkA" name="User"/>
+  </packagedElement>
+</uml:Model>
