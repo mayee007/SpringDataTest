@@ -44,7 +44,7 @@ public class FullNameController {
 		return service.getFullNameById(id); 
     }
 	
-	@PostMapping(produces = { "application/json" })
+	@PostMapping
     public @ResponseBody FullName addFullName(@RequestBody FullName name) {
 		logger.info("inside NameController().addFullName(), name is "+name);
 		return service.addFullName(name); 
