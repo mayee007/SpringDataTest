@@ -2,6 +2,8 @@ package com.mine.SpringDataTest.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -26,28 +28,35 @@ public class NameController {
 	@Autowired 
 	FullNameService service; 
 
+	private Logger logger = LoggerFactory.getLogger(NameController.class);
+	
 	@GetMapping(produces = { "application/json" })
     public @ResponseBody List<FullName> getAllFullNames() {
+		logger.info("inside NameController().getAllFullNames()");
 		return service.getAllFullName();
     }
 	
 	@GetMapping("/{id}")
     public @ResponseBody FullName getFullNameById(@PathVariable int id) {
+		logger.info("inside NameController().getFullNameById()");
 		return service.getFullNameById(id); 
     }
 	
 	@PostMapping(produces = { "application/json" })
     public @ResponseBody FullName addFullName(@PathVariable FullName name) {
+		logger.info("inside NameController().getFullNameById(), name is "+name);
 		return service.addFullName(name); 
     }
 	
 	@DeleteMapping("/{id}")
-    public @ResponseBody void deleteFillName(@PathVariable int id) {
+    public @ResponseBody void deleteFullName(@PathVariable int id) {
+		logger.info("inside NameController().deleteFullName(), id is "+id);
 		service.deleteFullName(id);
     }
 	
 	@PutMapping(produces = { "application/json" })
     public @ResponseBody FullName updateFullName(@PathVariable FullName name) {
+		logger.info("inside NameController().updateFullName(), name is "+name);
 		return service.updateFullName(name); 
     }
 }
