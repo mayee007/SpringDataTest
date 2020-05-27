@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.mine.SpringDataTest.Model.FullName;
 import com.mine.SpringDataTest.dao.NameRepo;
+import com.mine.SpringDataTest.service.interfaces.IFullNameService;
 
 @Service
 public class FullNameService implements IFullNameService {

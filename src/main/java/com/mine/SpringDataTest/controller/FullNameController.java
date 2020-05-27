@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,12 +24,12 @@ import com.mine.SpringDataTest.service.FullNameService;
 
 @RestController
 @RequestMapping("/names")
-public class NameController {
+public class FullNameController {
 
 	@Autowired 
 	FullNameService service; 
 
-	private Logger logger = LoggerFactory.getLogger(NameController.class);
+	private Logger logger = LoggerFactory.getLogger(FullNameController.class);
 	
 	@GetMapping(produces = { "application/json" })
     public @ResponseBody List<FullName> getAllFullNames() {
@@ -43,8 +44,8 @@ public class NameController {
     }
 	
 	@PostMapping(produces = { "application/json" })
-    public @ResponseBody FullName addFullName(@PathVariable FullName name) {
-		logger.info("inside NameController().getFullNameById(), name is "+name);
+    public @ResponseBody FullName addFullName(@RequestBody FullName name) {
+		logger.info("inside NameController().addFullName(), name is "+name);
 		return service.addFullName(name); 
     }
 	
@@ -55,7 +56,7 @@ public class NameController {
     }
 	
 	@PutMapping(produces = { "application/json" })
-    public @ResponseBody FullName updateFullName(@PathVariable FullName name) {
+    public @ResponseBody FullName updateFullName(@RequestBody FullName name) {
 		logger.info("inside NameController().updateFullName(), name is "+name);
 		return service.updateFullName(name); 
     }

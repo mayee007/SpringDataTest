@@ -1,4 +1,4 @@
-package com.mine.SpringDataTest.service;
+package com.mine.SpringDataTest.service.interfaces;
 
 import java.util.List;
 import java.util.Optional;
