@@ -10,6 +10,6 @@ import com.mine.SpringDataTest.Model.Problem;
 
 @RepositoryRestResource(collectionResourceRel="problem", path="problem")
 public interface ProblemRepo extends JpaRepository<Problem, Integer> {
-	 @Query("FROM Info ORDER BY modifiedDate DESC")
+	 @Query("FROM Problem ORDER BY modifiedDate DESC")
 	 List<Problem> findAllOrderByModifiedDate();
 }
