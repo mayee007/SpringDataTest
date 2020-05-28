@@ -21,7 +21,7 @@ public class InfoService implements IInfoService {
 
 	@Override
 	public List<Info> getAllInfo() {
-		return repo.findAll(); 
+		return repo.findAllOrderByModifiedDate(); 
 	}
 
 	@Override

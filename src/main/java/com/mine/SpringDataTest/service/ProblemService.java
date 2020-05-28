@@ -21,7 +21,7 @@ public class ProblemService implements IProblemService {
 
 	@Override
 	public List<Problem> getAllProblem() {
-		return repo.findAll(); 
+		return repo.findAllOrderByModifiedDate(); 
 	}
 
 	@Override
