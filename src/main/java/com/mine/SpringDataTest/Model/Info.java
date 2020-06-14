@@ -13,9 +13,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.springframework.data.redis.core.RedisHash;
+
 @Entity
 @Table(name = "INFO")
 @XmlRootElement 
+@RedisHash("transaction")
 public class Info implements java.io.Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO) //this make the ID autoincrement

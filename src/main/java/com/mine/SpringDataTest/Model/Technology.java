@@ -7,9 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.springframework.data.redis.core.RedisHash;
+
 @Entity
 @Table(name = "TECHNOLOGY")
 @XmlRootElement 
+@RedisHash("transaction")
 public class Technology implements java.io.Serializable {
 	
 	@Id
