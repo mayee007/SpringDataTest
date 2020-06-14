@@ -9,6 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import com.mine.SpringDataTest.Model.Technology;
+import com.mine.SpringDataTest.controller.TechnologyController;
 import com.mine.SpringDataTest.dao.TechnologyRepo;
 import com.mine.SpringDataTest.service.interfaces.ITechnologyService;
 
@@ -33,6 +34,7 @@ public class TechnologyService implements ITechnologyService {
 		//return repo.findAllOrderByCategory(); 
 		List<Technology> techs = new ArrayList<Technology>(); 
 		for (Technology tech: repo.findAllOrderByCategory()) { 
+			logger.info("inside TechnologyService::getAllTechnology(), adding records to redis"); 
 			techs.add(tech); 
 			ops.put(KEY, tech.getTechnologyId(), tech);
 		}
