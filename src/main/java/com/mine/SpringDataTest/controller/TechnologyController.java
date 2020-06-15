@@ -25,7 +25,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class TechnologyController {
 
-	/*@Autowired 
+	@Autowired 
 	TechnologyService service; 
 
 	private Logger logger = LoggerFactory.getLogger(TechnologyController.class);
@@ -59,5 +59,5 @@ public class TechnologyController {
     		@RequestBody Technology tech) {
 		logger.info("inside techController().updateTechnology(), tech is "+tech);
 		return service.updateTechnology(tech); 
-    } */ 
+    } 
 }

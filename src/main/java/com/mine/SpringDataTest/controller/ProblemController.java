@@ -21,7 +21,7 @@ import com.mine.SpringDataTest.service.ProblemService;
 @RequestMapping("/problems")
 public class ProblemController {
 
-	/* @Autowired 
+	@Autowired 
 	ProblemService service; 
 
 	private Logger logger = LoggerFactory.getLogger(ProblemController.class);
@@ -55,5 +55,5 @@ public class ProblemController {
     		@RequestBody Problem problem) {
 		logger.info("inside problemController().updateProblem(), problem is "+problem);
 		return service.updateProblem(problem); 
-    } */ 
+    }
 }

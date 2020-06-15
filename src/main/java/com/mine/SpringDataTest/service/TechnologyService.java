@@ -21,11 +21,12 @@ public class TechnologyService implements ITechnologyService {
 	private Logger logger = LoggerFactory.getLogger(TechnologyService.class);
 	
 	public TechnologyService() {
-	}
+	} 
 
 	@Override
 	public List<Technology> getAllTechnology() {
 		//return repo.findAll(); 
+		logger.info("inside TechnologyService::getAllTechnology()");
 		return repo.findAllOrderByCategory(); 
 	}
 

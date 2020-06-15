@@ -34,7 +34,8 @@ public class FullNameController {
 	
 	@GetMapping(produces = { "application/json" })
     public @ResponseBody List<FullName> getAllFullNames() {
-		logger.info("inside NameController().getAllFullNames()");
+		
+		System.out.println("inside NameController().getAllFullNames()");
 		return service.getAllFullName();
     }
 	
