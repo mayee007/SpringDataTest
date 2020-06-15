@@ -19,48 +19,27 @@ public class TechnologyService implements ITechnologyService {
 	@Autowired
 	private TechnologyRepo repo; 
 	private Logger logger = LoggerFactory.getLogger(TechnologyService.class);
-	private RedisTemplate<String, Technology> redisTemplate; 
-	private HashOperations ops; 
-	private String KEY = "TECH";
 	
-	public TechnologyService(RedisTemplate<String, Technology> redisTemplate) {
-		this.redisTemplate = redisTemplate;
-		ops = redisTemplate.opsForHash();
+	public TechnologyService() {
 	}
 
 	@Override
 	public List<Technology> getAllTechnology() {
 		//return repo.findAll(); 
-		//return repo.findAllOrderByCategory(); 
-		List<Technology> techs = new ArrayList<Technology>(); 
-		for (Technology tech: repo.findAllOrderByCategory()) { 
-			logger.info("inside TechnologyService::getAllTechnology(), adding records to redis"); 
-			techs.add(tech); 
-			ops.put(KEY, tech.getTechnologyId(), tech);
-		}
-		return techs;  
+		return repo.findAllOrderByCategory(); 
 	}
 
 	@Override
 	public Technology getTechnologyById(int id) {
 		logger.info("inside TechnologyService::getTechnologyById(), ID is "+id);
-		if (ops.hasKey(KEY, id)) { 
-			logger.info("key "+ id +" exists in redis"); 
-			return (Technology) ops.get(KEY, id); 
-		}
-		Technology tech = null; 
-		if (repo.findById(id).isPresent()) { 
-			tech = repo.findById(id).get();
-		}
-		
-		return tech; 
+
+		return repo.findById(id).get(); 
 	}
 
 	@Override
 	public Technology updateTechnology(Technology tech) {
 		logger.info("TechnologyService::updateTechnology() "+ tech);
 		Technology newTech = repo.save(tech); 
-		ops.put(KEY, newTech.getTechnologyId(), newTech);
 		return newTech;
 	}
 
@@ -68,7 +47,6 @@ public class TechnologyService implements ITechnologyService {
 	public void deleteTechnology(int id) {
 		logger.info("TechnologyService::deleteTechnology, id = " + id);
 		Technology tech = repo.findById(id).get(); 
-		ops.delete(KEY, tech.getTechnologyId()); 
 		repo.delete(tech);
 	}
 
@@ -77,7 +55,6 @@ public class TechnologyService implements ITechnologyService {
 		logger.info("TechnologyService::addTechnology() "+ tech);
 		Technology newTech = repo.save(tech); 
 		logger.info("adding record "+ tech.getTechnologyId() + " to redis");
-		ops.put(KEY, newTech.getTechnologyId(), newTech);
 		return newTech;
 	}
 	

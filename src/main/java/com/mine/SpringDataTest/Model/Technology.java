@@ -8,17 +8,18 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed;
 
 @Entity
 @Table(name = "TECHNOLOGY")
 @XmlRootElement 
-@RedisHash("transaction")
+@RedisHash("technology")
 public class Technology implements java.io.Serializable {
 	
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO) //this make the ID autoincrement
 	@Column(name = "id")
-	int technologyId;
+	int technologyId;	
 	
 	@Column 
 	String technologyType;

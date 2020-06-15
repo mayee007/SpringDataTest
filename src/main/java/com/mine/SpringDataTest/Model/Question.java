@@ -12,7 +12,7 @@ import org.springframework.data.redis.core.RedisHash;
 @Entity
 @Table(name = "QUESTION")
 @XmlRootElement 
-@RedisHash("transaction")
+//@RedisHash("question")
 public class Question implements java.io.Serializable {
 	
 	@Id

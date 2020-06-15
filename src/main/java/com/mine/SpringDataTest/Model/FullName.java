@@ -11,7 +11,7 @@ import org.springframework.data.redis.core.RedisHash;
 
 @Entity
 @Table(name = "FULLNAME")
-@RedisHash("transaction")
+//@RedisHash("fullname")
 public class FullName {
 
 	@Id //this makes the id as primary key 

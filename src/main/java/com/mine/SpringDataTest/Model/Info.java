@@ -18,7 +18,7 @@ import org.springframework.data.redis.core.RedisHash;
 @Entity
 @Table(name = "INFO")
 @XmlRootElement 
-@RedisHash("transaction")
+//@RedisHash("info")
 public class Info implements java.io.Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO) //this make the ID autoincrement
