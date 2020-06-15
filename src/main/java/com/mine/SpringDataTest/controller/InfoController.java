@@ -22,7 +22,7 @@ import com.mine.SpringDataTest.service.InfoService;
 @RequestMapping("/infos")
 public class InfoController {
 
-	@Autowired 
+	/*@Autowired 
 	InfoService service; 
 
 	private Logger logger = LoggerFactory.getLogger(InfoController.class);
@@ -56,5 +56,5 @@ public class InfoController {
     		@RequestBody Info info) {
 		logger.info("inside infoController().updateInfo(), info is "+info);
 		return service.updateInfo(info); 
-    }
+    } */ 
 }

@@ -18,20 +18,23 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mine.SpringDataTest.Model.Technology;
 import com.mine.SpringDataTest.service.TechnologyService;
 
+import lombok.extern.log4j.Log4j2;
+
 @RestController
 @RequestMapping("/techs")
+@Log4j2
 public class TechnologyController {
 
-	@Autowired 
+	/*@Autowired 
 	TechnologyService service; 
 
 	private Logger logger = LoggerFactory.getLogger(TechnologyController.class);
 	
 	@GetMapping(produces = { "application/json" })
     public @ResponseBody List<Technology> getAllTechnologys() {
-		logger.info("inside techController().getAllTechnologys()");
-		return service.getAllTechnology();
-    }
+		logger.warn("inside techController().getAllTechnologys()");
+		return null; // service.getAllTechnology();
+    } 
 	
 	@GetMapping("/{id}")
     public @ResponseBody Technology getTechnologyById(@PathVariable int id) {
@@ -56,5 +59,5 @@ public class TechnologyController {
     		@RequestBody Technology tech) {
 		logger.info("inside techController().updateTechnology(), tech is "+tech);
 		return service.updateTechnology(tech); 
-    }
+    } */ 
 }
