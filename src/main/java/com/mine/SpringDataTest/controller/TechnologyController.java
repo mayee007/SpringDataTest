@@ -33,7 +33,7 @@ public class TechnologyController {
 	@GetMapping(produces = { "application/json" })
     public @ResponseBody List<Technology> getAllTechnologys() {
 		logger.warn("inside techController().getAllTechnologys()");
-		return null; // service.getAllTechnology();
+		return service.getAllTechnology();
     } 
 	
 	@GetMapping("/{id}")
